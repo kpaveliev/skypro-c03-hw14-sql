@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('.static',filename='style.css') }}">
+</head>
+<body>
+<main>
+    <h1>Варианты поиска</h1>
+    <hr>
+    <form action="/movie/" method="get">
+        <p>Поиск по названию фильма</p>
+        <input type="text" name="s" placeholder="название или его часть">
+        <input type="submit" value="Найти" class="button" >
+    </form>
+
+</main>
+</body>
+</html>
