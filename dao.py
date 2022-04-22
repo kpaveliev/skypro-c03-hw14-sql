@@ -216,4 +216,3 @@ class NetflixDAO:
                 titles_list.append(titles_dict)
 
         return titles_list
-

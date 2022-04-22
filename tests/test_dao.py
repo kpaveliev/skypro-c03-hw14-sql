@@ -1,6 +1,4 @@
 import pytest
-from dao import NetflixDAO
-from config import DB_NETFLIX
 
 class TestNetflixDAO:
     pass

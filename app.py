@@ -24,7 +24,7 @@ def title_index():
 @app.route('/movie/<title>')
 def title(title):
     query_result = db.get_title(title)
-    return query_result
+    return jsonify(query_result)
 
 
 @app.route('/movie/<int:year_from>/to/<int:year_to>')
@@ -47,5 +47,4 @@ def titles_genre(genre):
 
 # Start app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
-
+    app.run()
